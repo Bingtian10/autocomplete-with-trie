@@ -19,7 +19,7 @@ for each node.
 
 We can first construct a Trie and start to accept user's query and stores them in Trie.
 Or we can provide our own user query history and input them into the Trie. Either way,
-the user then can provide a prefix, and with the prefix, we provide all words in Trie
+the user then can provide a prefix, and with the prefix, we return all words in Trie
 containing the prefix.
 
 ## Algorithm
@@ -36,6 +36,13 @@ If we encounter a node that is marked by Trie as a word, we add it to the result
 When we finish searching, return the List that contains the all the search results.
 
 ## Example
+To run the java program from command line, provide an space separated
+input of words, I use in.txt as input in the following, and then run:
+```
+javac Autocomplete.java
+java Autocomplete < in.txt
+```
+
 Say we insert the following words into our Trie:
 hello
 dog
